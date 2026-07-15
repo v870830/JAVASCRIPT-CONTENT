@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo1">hello</p>
+  <p id="demo2"></p>
+  <p class="demo3">classname</p>
+  <p class="demo4">i am demo4</p>
+  <p class="demo5">hello i a demo5</p>
+  <script>
+    //below all are example of dom sleector
+    let para1=document.getElementById("demo1")
+    para1.textContent="hello i am text xontent of paragraph 1"
+    // to chage the text that was write in first of that paragraph
+    //we will use textcontent
+
+
+    let para2=document.getElementById("demo2")
+    para2.innerText="<b>hello i am bold tag</b>"
+    para2.innerHTML="<b>hello i am a bold tag</b>"
+    // in case of innerhtml we write that tag inside"" that will valid
+    //but in case of innertext it we will not count s tag
+
+
+    let para3=document.getElementsByClassName("demo3")
+    for(let i=0;i<para3.length;i++){
+      para3[i].style.color="red"
+    }
+    //in this case class name we defin p in class upper than we used for lop
+    //because without its it will not run /not do its work its work on indexing
+
+    let para4=document.querySelectorAll(".demo4")
+    for (let j=0;j<para3.length;j++){
+         para4[j].style.color="green"
+    } // we will use(.) and its also do color in the form indxeing
+    //here selector is only a class not any id due to .
+
+    let para5=document.querySelector(".demo5")
+    for (let j=0;j<para5.length;j++){
+       para5[j].style.color="green"
+         }//<!-- in  document.queryselcector her it finds only first no will go next -->
+
+
+    //now this is for image to add on html page with the help of java 
+    let img=document.createElement("img")
+    img.setAttribute("src","lpu logo image.jpg")
+    img.setAttribute("width","10px")
+    document.body.append(img)
+
+  //here we give the id of the image
+    // let image=document.createElement("img")
+    // image.setAttribute("src","logo.png")
+    // image.setAttribute("width","100px")
+    // document.body.appendChild(image)
+     // image.setAttribute("id","imagee")
+      // let source=image.getAttribute("id")
+      // console.log(source)
+
+
+
+
+      let newpara=document.createElement("h1")
+      newpara.innerHTML="this is my para"
+      document.body.append(newpara,"hellllloooooo")
+      document.body.appendChild(newpara,"hellllloooooo")
+      // newpara.remove() this is used to remove  that particular para
+         //here in append you can add many text and string in last of the parent section
+         //but in case of append child you can oby add one string
+
+    
+      
+  </script>
+</body>
+</html>

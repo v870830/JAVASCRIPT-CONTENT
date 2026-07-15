@@ -1,0 +1,18 @@
+If you put a number in quotes, 
+the rest of the numbers will be treated as strings, and concatenated.
+
+
+Global Scope
+Variables declared with the var always have Global Scope.
+
+Variables declared with the var keyword can NOT have block scope:
+
+
+Block Scope
+Before ES6 (2015), JavaScript did not have Block Scope.
+
+JavaScript had Global Scope and Function Scope.
+
+ES6 introduced the two new JavaScript keywords: let and const.
+
+These two keywords provided Block Scope in JavaScript
